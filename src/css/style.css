@@ -25,7 +25,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-image: linear-gradient(43deg, #4158D0 0%, #c850c0 46%, #FFCC70 100%);
 }
 
 a {
@@ -66,7 +66,7 @@ h2 {
 
 #navbar {
     width: 100%;
-    background: #111;
+    background: #222;
     color: #eee;
     height: 80px;
     position: fixed;
@@ -117,6 +117,32 @@ h2 {
     color: #cb57bb;
 }
 
+/* Sidebar */
+
+#sidebar__container{
+    margin-top: 170px;
+    position: fixed;
+    z-index: 2;
+    left: 95%;
+}
+.sidebar{
+    background-color: #222;
+    width: 70px;
+    height: 400px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.sidebar i{
+    color: #eee;
+    cursor: pointer;
+}
+.sidebar i:hover{
+    color: #cb57bb;
+    transition: 0.2s;
+}
+
 /* Showcase */
 
 #showcase {
@@ -149,8 +175,9 @@ h2 {
 
 #features {
     height: 83vh;
+    width: 80%;
     padding: 20px 50px 0 50px;
-    margin: 20px;
+    margin: 20px auto;
     background: #222;
     color: #eee;
     border-radius: 10px;
@@ -191,9 +218,9 @@ h2 {
 /* Product */
 
 #product {
-    width: 100%;
+    width: 80%;
     padding: 0px 50px 0 50px;
-    margin: 20px 0 0 0;
+    margin: 20px auto 0 auto;
     color: #fff;
 }
 
@@ -248,8 +275,9 @@ h2 {
 
 #testimonials {
     height: 83vh;
+    width: 80%;
     padding: 0 50px 0 50px;
-    margin: 0 20px 20px 20px;
+    margin: 0 auto 20px auto;
     background: #222;
     color: #eee;
     border-radius: 20px;
@@ -305,9 +333,9 @@ h2 {
 /* Gallery */
 
 #gallery {
-    width: 100%;
+    width: 80%;
     padding: 50px;
-    margin: 20px 0 0 0;
+    margin: 20px auto 0 auto;
     color: #fff;
 }
 
@@ -315,7 +343,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    justify-items: center;
+    justify-content: center;
 }
 
 .gallery-image {
