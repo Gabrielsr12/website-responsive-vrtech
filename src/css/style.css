@@ -50,7 +50,7 @@ h2 {
 
 .btn:hover {
     cursor: pointer;
-    background: #000;
+    background: #cb57bb;
 }
 
 .headline {
@@ -126,16 +126,20 @@ h2 {
     left: 95%;
 }
 .sidebar{
-    background-color: #222;
+    background-color: #222222bd;
     width: 70px;
-    height: 400px;
+    height: 420px;
     display: grid;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
 }
+.sidebar:hover{
+    background-color: #222;
+    transition: 0.2s;
+}
 .sidebar i{
-    color: #eee;
+    color: #eeeeeebd;
     cursor: pointer;
 }
 .sidebar i:hover{
